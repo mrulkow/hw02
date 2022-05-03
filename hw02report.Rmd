@@ -1,0 +1,82 @@
+---
+title: 'Stats 250: Homework 2'
+author: "Instructional Team"
+date: "Spring/Summer 2022"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_collapsed: true
+    theme: lumen
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Instructions
+
+Homework assignments will typically contain a coding-based question that tests your R knowledge learned in lab. We will provide you with an R Markdown template which you will use to create code that generates some desired output. This "desired output" might be a numerical summary, a table, a plot, or even the result of a statistical test. 
+
+Remember, *Stats 250 is not a programming class*. If you need help, circle back to the lab documents or reach out to an instructor (in office hours or via email) for help!   
+
+
+### Animal Rescues
+
+The animals data set contains information about the animal rescue incidents attended to by the London Fire Department. Run the code chunk below to read in the data set.
+
+```{r readAnimals}
+rescues <- read.csv("animals.csv")
+```
+
+You should now see a "Data" object called `rescues` when you look in the global environment pane of R Studio (top right).
+
+Feel free to run the code chunk below to preview the data set.
+
+```{r previewAnimals}
+head(rescues)
+```
+
+Use the functions you learned in Lab 2 to complete the following tasks. 
+
+
+***
+
+
+### Part A
+
+Using the variable `Animal`, make an *appropriate plot* that will allow you to determine which animal is most likely to be rescued by the London Fire Department. Be sure to include a proper title (which states the type of plot and the name of the variable plotted) - as well as appropriate axis labels. Hint: feel free to copy, paste, and alter code chunks from Lab 2. 
+
+```{r AnimalPlot, error = T}
+# Replace this comment with your code
+
+```
+
+
+***
+
+
+### Uploading Images to Course.Work. 
+Please do not copy and paste your plot above (it wil only lead to errors in Course.Work). Instead, choose one of the options below!
+
+- **Option 1:** Right click on your plot and click "Save Image"
+
+- **Option 2:** Take a screenshot of the plot (Mac users can hit "Command + Shift + 4" to select the portion of the screen to capture; Windows users can hit "Windows logo + Shift + S" to do the same).
+
+After completing Option 1 or 2, head to Course.Work and upload your image. **Again, please do not simply copy and paste the image to Course.Work.** 
+
+
+***
+
+
+### Part B
+
+Use the `table()` function to create a two-way frequency table of `Animal` and `RescueType`. Remember, you can include row and column totals by using the `addmargins()` function.   
+
+```{r AnimalTable, error = T}
+# Replace this comment with your code
+
+```
+
+Don't forget to upload a screenshot of your table as part of your response. See Option 2 from the "Uploading Images to Course.Work" section above.
+
